@@ -1,0 +1,91 @@
+/* @import "compass/css3"; */
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+.h1 {
+  text-align: center;
+  color: #000000;
+  @include text-shadow(1px 1px 0 rgba(white, 1));
+  margin-top: 7vh;
+  margin-bottom: 3vh;
+}
+.h1c{
+   text-align: center;
+}
+
+.form {
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+}
+.input,
+.textarea {
+  outline: 0;
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: "Merriweather", sans-serif;
+  @include box-shadow(0 1px 1px rgba(black, 0.1));
+  resize: none;
+}
+
+#input_submit {
+   background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   cursor: pointer;
+}
+#input_submit:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+    }
+   
+
+.textarea {
+  height: 126px;
+}
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right {
+  width: 50%;
+}
+
+.left {
+  margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+  .half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}

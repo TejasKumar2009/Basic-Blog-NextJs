@@ -1,0 +1,28 @@
+.navbar{
+   /* background-color: red; */
+ 
+ }
+ .navul{
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+ }
+ .navli{
+   list-style: none;
+   margin: 0 20px;
+   font-size: larger;
+   font-weight: bold;
+ }
+ .navli:hover{
+   color:#0070f3;;
+   cursor: pointer;
+ }
+
+ @media only screen and (max-width: 500px) {
+  .navul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+ 
